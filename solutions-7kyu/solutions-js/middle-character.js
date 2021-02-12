@@ -18,6 +18,7 @@ function getMiddle(str) {
     
 //     if (length % 2 === 0) {
 //         // will return the character before the middle character and the middle character
+//         // note the use of brackets to access the array
 //         return str[middle - 1] + str[middle]
 //     } else {
 //         return str[middle]
