@@ -11,3 +11,15 @@ function getMiddle(str) {
     }
 }
 
+// function getMiddle(str) {
+//     let length = str.length
+//     // will give middle character in string when odd
+//     let middle = Math.floor(length / 2)
+    
+//     if (length % 2 === 0) {
+//         // will return the character before the middle character and the middle character
+//         return str[middle - 1] + str[middle]
+//     } else {
+//         return str[middle]
+//     }
+// }
