@@ -10,7 +10,7 @@ function positiveSum(arr) {
 
 // solution 02
 function positiveSum(arr) {
-    return arr.reduce((a, c) => a + (c > 0 ? a + c : a), 0)
+    return arr.reduce((a, c) => a + (c > 0 ? c : 0), 0)
 }
 
 // solution 03
