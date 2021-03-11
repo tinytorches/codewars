@@ -5,9 +5,8 @@
 // Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia), "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
 function bonusTime(salary, bonus) {
     if (bonus === true) {
-        let fatCat = `£${salary * 10}'
-        return fatCat  
+        return `£${salary * 10}`  
     } else {
-
+        return `£${salary}`
     }
 }
