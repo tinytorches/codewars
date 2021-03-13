@@ -8,3 +8,8 @@ function detect(comment) {
         return false
     }
 }
+
+// ternary solution
+function detect(comment) {
+    return (comment.startsWith('Can someone explain') ? true : false)
+}
