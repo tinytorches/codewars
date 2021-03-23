@@ -4,8 +4,10 @@
 // initial attempt
 function between(a, b) {
     let arr = [];
-    for (var i = a; i <= b; i++) {
+    for (let i = a; i <= b; i++) {
         return arr.push(i);
     }
 }
 
+// Array.from() attempt
+const between = (a, b) => Array.from({length: (b - a)})
