@@ -29,6 +29,5 @@ function getPlanetName(id){
         name = 'Neptune'
         break
     }
-    
     return name;
-  }
+}
