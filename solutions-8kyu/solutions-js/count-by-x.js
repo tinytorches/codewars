@@ -12,3 +12,11 @@ const countBy = (x, n) => {
     return arr
 }
 
+// Alternative solution
+const countBy = (x, n) => {
+    let arr = []
+    for (i = 1; i <= n; i++) {
+        arr.push(x * i)
+    }
+    return arr
+}
