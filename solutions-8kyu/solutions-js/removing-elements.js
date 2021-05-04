@@ -5,3 +5,10 @@
 const removeEveryOther = (arr) => {
     return arr.filter((a, i) => i % 2 === 0)
 }
+
+// Alternative solution
+const removeEveryOther = (arr) => {
+    return arr.filter((elem, index) => {
+        return index % 2 === 0
+    })
+}
