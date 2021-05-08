@@ -9,3 +9,8 @@
 const digitize = (n) => {
     return Array.from(String(n), Number).reverse()
 }
+
+// Additional solution
+const digitize = (n) => {
+    return String(n).split('').map(Number).reverse()
+}
