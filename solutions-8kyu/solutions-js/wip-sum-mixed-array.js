@@ -1,24 +1,19 @@
 // Sum Mixed Array
+// https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
+
 // Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 // Return your answer as a number.
 
-// Initial attempt
-const sumMix = (int) => {
-    let numArr = Number(int)
-    console.log(numArr)
-    // numArr.reduce((acc, currVal) => acc + currVal)
+// Solution
+const sumMix = (arr) => {
+    return arr.map(a => + a).reduce((a, c) => a + c)
 }
 
-// look through array and convert strings into integers
-// reduce the array to receive the sum
-// return the sum
-
+// Additional solution
 const sumMix = (arr) => {
-    let parseArr = []
-    for ( let i = 0; i <= arr.length; i++ ) {
-        if ( isNaN(arr[i]) ) {
-            arr.push(parseInt(i))
-        }
+    let result = 0
+    for (let n of arr) {
+        result += parseInt(n)
     }
-    return parseArr.reduce((a, c) => a + c)
+    return result
 }
