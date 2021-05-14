@@ -13,3 +13,8 @@ const smallEnough = ( array, limit ) => {
     }
     return result
 }
+
+// Alternative solution
+const smallEnough = ( array, limit ) => {
+    return Math.max( ...a ) <= limit
+}
