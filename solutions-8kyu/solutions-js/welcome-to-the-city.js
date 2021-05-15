@@ -6,5 +6,5 @@
 // This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
 
 const sayHello = ( name, city, state ) => {
-    return `Hello, ${name[0]} ${name[1]}! Welcome to ${city}, ${state}!`
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
